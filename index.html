@@ -21,11 +21,31 @@ linear-gradient(rgba(255,245,248,.55),rgba(248,252,255,.65)),
 url('anh4.jpg');
 background-size:cover;background-position:center;
 }
-.hero:before{
-content:'';position:absolute;inset:0;
-background:radial-gradient(circle at 20% 20%,rgba(173,216,230,.25),transparent 35%),
-radial-gradient(circle at 80% 70%,rgba(255,192,203,.18),transparent 35%);
-animation:float 8s ease-in-out infinite alternate;
+.hero{
+height:100vh;
+position:relative;
+
+display:flex;
+flex-direction:column;
+
+/* Đẩy nội dung xuống thấp hơn */
+justify-content:flex-end;
+
+align-items:center;
+text-align:center;
+
+padding:20px;
+padding-bottom:120px;
+
+background:
+linear-gradient(
+rgba(255,245,248,.35),
+rgba(248,252,255,.55)
+),
+url('anh4.jpg');
+
+background-size:cover;
+background-position:center;
 }
 @keyframes float{to{transform:translateY(-20px)}}
 h1{
@@ -154,10 +174,9 @@ h1{font-size:3rem}
 
     <p class="thankyou">
         Sự hiện diện của quý vị là niềm vui và vinh hạnh lớn lao đối với gia đình chúng tôi.
-
         <br><br>
-
-        Xin chân thành cảm ơn và mong được đón tiếp quý vị trong ngày trọng đại của
+        Xin chân thành cảm ơn và mong được đón tiếp quý vị trong ngày trọng đại
+        <br>
         Tuấn Anh & Quỳnh Trang.
     </p>
 </footer>
